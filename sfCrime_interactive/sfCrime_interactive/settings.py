@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'leaf_loc',
     'leaflet',
     'djgeojson',
+    'corsheaders',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,7 +52,11 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 )
+
+CORS_ORIGIN_ALLOW_ALL = True 
 
 ROOT_URLCONF = 'sfCrime_interactive.urls'
 
@@ -84,6 +89,7 @@ DATABASES = {
     }
 }
 
+STATIC_URL = '/static/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/

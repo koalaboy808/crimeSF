@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--Custom Styles-->
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="ajax-snippet">
+	<form id="luhnAlgorithmForm" method="POST">
+        <div class = "main-body">
+            <span><h1 id="main_header2">Credit Card Validator</h1></span>
+        </div>
+        <div id = "errorMessage2">
+        </div>
+        
+        <br>
+        <div class = "row">
+            <div class = "col-md-6 div-right">
+                <label for="number">Enter a credit card number: </label> 
+            </div> 
+            <div class = "col-md-6">    
+                <input type="text" name="number" class="form-control width-adjust">
+            </div>
+        </div>
+        <div class = "div-center">
+            <input type="submit" value="Validate Credit Card Number" class="btn btn-default btn-success"/>
+            <br>  
+        </div>
+    </form>
+
+</div>
+<script src="/static/jquery-1.11.3.js"></script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>

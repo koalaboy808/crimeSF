@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    Optional theme
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body style=" padding: 20px;">
+
+<div id="ajax-snippet"></div>
+
+    <!-- Mad lib form -->
+    <form id="madlibForm" method="POST">
+        <!-- header top -->
+        <div style="color:black" class="jumbotron"> 
+            <h1>Your Madlib Form!</h1>
+            <p> Fill out this form to see which house you will be placed in </p>
+        </div>
+
+        <!-- input text-->
+        <label for="name"> Write your name here if you dare: </label> 
+        <input type="text" id="name" name="name">
+
+        </br>
+        <!-- input number -->
+        <label for="digit"> What's your age misses? </label> 
+        <input type="text" id="digit" name="digit">
+
+        </br>
+        <!-- checkbox -->
+        <p> Check all desired killing weapons </p>
+        <label for="blade_name"> Baracuda </label>
+        <input type="checkbox" value="bronze blade" id="weapon" name="blade_name">
+        <label for="leaf_name"> Fickle Leaf </label>
+        <input type="checkbox" value="fickle leaf" id="weapon" name="leaf_name">
+        <label for="bacon_name"> Bacon Bone </label>
+        <input type="checkbox" value="bacon bone" id="weapon" name="bacon_name">
+        <label for="poison_name"> Sheep Poison </label>
+        <input type="checkbox" value="sheep poison" id="weapon" name="poison_name">
+        
+        </br></br>
+        <!-- select -->
+        <label for="select_pet">What's your spirit animal:</label>
+
+        <select name="pet" id="select_pet">
+            <option value="Giant Koala" >Giant Koala</option>
+            <option value="Liger" >Liger</option>
+            <option value="Jiggly-Puff" >Jiggly-Puff</option>
+        </select>
+
+        </br>
+        <!-- Radiotype -->
+        </br>
+        <p> Favorite killing technique: </p>
+        <input type="radio" name="kill_face" value="face" id="kill"><label for="kill"> Face Shot </label>
+        <input type="radio" name="kill_stomach" value="stomach" id="kill"><label for="kill"> Stomach Kick </label>
+        <input type="radio" name="kill_crotch" value="crotch" id="kill"><label for="kill"> Crotch Uppercut </label>
+        <input type="radio" name="kill_rock" value="jugular" id="kill"><label for="kill"> Throw Rock </label>
+
+        </br></br>
+        <!-- Create Story -->
+        <input type="submit" value="Create Story" />
+
+
+
+
+
+    </form>
+
+    <!-- Where your madlib story will appear -->
+    <div id="madlibStory">
+
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="/static/jquery-1.11.3.js"></script>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
+

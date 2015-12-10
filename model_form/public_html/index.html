@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--Custom Styles-->
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="ajax-snippet">
+
+    
+    
+    <!-- Mad lib form -->
+    <form id="madlibForm" method="POST">
+        <div class = "main-body">
+            <span><h1 id="main_header">Madlib!!!!</h1></span>
+        </div>
+        <br>
+        <div id = "errorMessage">
+        </div>
+        <br>
+        <div>
+        <div class = "row">
+            <div class = "col-md-6 div-right">
+                <label for="name">Enter your name: </label> 
+            </div>
+            <div class = "col-md-6">
+                <input type="text" name="name" class="form-control width-adjust">
+            </div>
+        </div>
+        <br>
+        <div class = "row">
+            <div class = "col-md-6 div-right">
+                <label for="title">Please select a title: </label>
+            </div>
+            <div class = "col-md-6">
+                <label class="radio-inline"><input type="radio" name="title" value="Ser">Ser</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="title" value="Lord">Lord</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="title" value="Dame">Dame</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="title" value="Lady">Lady</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="title" value="Emperor">Emperor</label>
+            </div>
+        </div>
+        <br>
+        <div class = "row">
+            <div class = "col-md-6 div-right">
+                <label for="place">Enter a place: </label>
+            </div> 
+            <div class = "col-md-6">
+                <input type="text" name="place" class="form-control width-adjust">
+            </div>
+        </div>
+        <br>
+        <div class = "row">
+            <div class = "col-md-6 div-right">
+                <label for="number">Enter a number: </label> 
+            </div> 
+            <div class = "col-md-6">    
+                <input type="text" name="number" class="form-control width-adjust">
+            </div>
+        </div>
+        <br>
+        <div class = "row">
+            <div class = "col-md-6 div-right">
+                <label for="ride">Select your ride: </label>
+            </div>
+            <div class = "col-md-6">
+                <label class="radio-inline"><input type="radio" name="ride" value="Deathstar">Deathstar</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="ride" value="Jigglypuff">Jigglypuff</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="ride" value="Sasquatch">Sasquatch</label>
+                <br>
+                <label class="radio-inline"><input type="radio" name="ride" value="MarryPoppins">MarryPoppins</label>
+            </div>
+        </div>
+        <br>
+        <div class = "row">
+            <div class = "col-md-6 div-right">
+                <label for="weapon">Choose a weapon: </label>
+            </div>
+            <div class = "col-md-6">
+                <select name="weapon" class="width-adjust form-control" >
+                    <option value="Unicorn Fart">Unicorn Fart</option>
+                    <option value="Elven Snot">Elven Snot</option>
+                    <option value="Dragon's Banana">Dragon's Banana</option>
+                    <option value="Legendary Shallot">Legendary Shallot</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class = "row">
+            <div class = "col-md-6 div-right">
+                <label for="monster">Think of a monster: </label> 
+            </div>
+            <div class = "col-md-6">
+                <input type="text" name="monster" class="form-control width-adjust">
+            </div>    
+        </div>    
+        <br>
+        <div class = "row">
+            <div class = "col-md-6 div-right">
+                <label for="likes">Select the things you like: </label> 
+            </div>
+            <div class = "col-md-6">
+                <input type="checkbox" name="likes1" value="Gurg Clots"> Gurg Clots
+                <input type="checkbox" name="likes2" value="Psycho Cabbages"> Psycho Cabbages
+                <br>
+                <input type="checkbox" name="likes3" value="Dweeb Skanks"> Dweeb Skanks
+                <input type="checkbox" name="likes4" value="Huffy Pudges"> Huffy Pudges
+            </div>
+        </div>    
+        <br>
+        <div class = "div-center">
+            <input type="submit" value="My Mad Lib!" class="btn btn-default btn-primary"/>
+            <a class="btn btn-default btn-primary" href="/creditcard_checker.html" role="button">Validate Credit Card Number</a>
+            <br>  
+        </div>
+        <div id="madlibStory" class = "story-body">
+
+        </div>
+
+    </form>
+    </div>
+
+    <!-- Where your madlib story will appear -->
+    
+
+    <script src="/static/jquery-1.11.3.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
